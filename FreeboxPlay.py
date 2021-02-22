@@ -72,6 +72,7 @@ def play(url, file):
         tkinter.messagebox.showinfo(title='Freebox Play', message='Fermez cette fenêtre à la fin de la lecture')
 
 def youtube(url, link):
+    if link.isdigit(): link = "tv:?channel="+link
     data = { "url": link }
     r = s.post('http://mafreebox.freebox.fr/api/v8/player/1/api/v6/control/open', headers=headers, json=data)
     j = json.loads(r.text)
@@ -109,7 +110,7 @@ if __name__ == '__main__':
             file = askopenfilename()
             play(url, file) 
         else:
-            link = tkinter.simpledialog.askstring("Youtube / Web", 'Lien :'+' '*100)
+            link = tkinter.simpledialog.askstring("Freebox Play", 'Lien : Youtube / URL / Chaine de télévision :'+' '*64)
             youtube(url, link)       
     else:
         failed('Echec, vérifiez le mot de passe')
