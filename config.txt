@@ -1,0 +1,2 @@
+password: "CHANGE ME"
+port: 9090
