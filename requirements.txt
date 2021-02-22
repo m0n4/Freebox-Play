@@ -1,0 +1,4 @@
+requests
+js2py
+python-magic-bin
+pyyaml
