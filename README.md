@@ -1,7 +1,6 @@
 # Freebox-Play
-Envoyer vers la Freebox
 
-Envoyer rapidement et simplement du contenu vers le Freebox Player.
+Envoyer rapidement et simplement du contenu vers le Freebox Player.  
 Aucune configuration requise.
 * Image
 * Musique
